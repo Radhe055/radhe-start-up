@@ -21,8 +21,7 @@ class Form1(Form1Template):
     BirthDate = self.date_picker_1.date
     Gender = self.drop_down_2.selected_value
     Password = self.text_box_4.text
-    BirthDateTimestamp = BirthDate.timestamp() if BirthDate else None
-    anvil.server.call('submit', Name=Name, Email=Email, Address=Address, BirthDate=BirthDateTimestamp, Gender=Gender, Password=Password)
+    anvil.server.call('submit', Name=Name, Email=Email, Address=Address, BirthDate=BirthDate, Gender=Gender, Password=Password)
 
   def drop_down_1_change(self, **event_args):
     """This method is called when an item is selected"""
