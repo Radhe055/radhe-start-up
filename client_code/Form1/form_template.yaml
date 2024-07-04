@@ -85,6 +85,7 @@ components:
     include_placeholder: false
   type: DropDown
   layout_properties: {slot: nav-right}
+  event_bindings: {change: drop_down_1_change}
 - name: label_8
   properties: {text: DashBord, icon: 'fa:align-justify', spacing_above: medium, spacing_below: medium, align: center, italic: false, underline: false}
   type: Label

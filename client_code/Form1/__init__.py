@@ -1,5 +1,6 @@
 from ._anvil_designer import Form1Template
 from anvil import *
+import plotly.graph_objects as go
 import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
@@ -22,3 +23,7 @@ class Form1(Form1Template):
     Password = self.text_box_4.text
     BirthDateTimestamp = BirthDate.timestamp() if BirthDate else None
     anvil.server.call('submit', Name=Name, Email=Email, Address=Address, BirthDate=BirthDateTimestamp, Gender=Gender, Password=Password)
+
+  def drop_down_1_change(self, **event_args):
+    """This method is called when an item is selected"""
+    pass
