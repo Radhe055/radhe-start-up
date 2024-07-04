@@ -30,16 +30,11 @@ db_schema:
     - name: Gender
       admin_ui: {order: 4, width: 200}
       type: string
-    - name: BirthDate
-      admin_ui: {order: 5, width: 200}
-      type: datetime
     - name: Password
       admin_ui: {order: 6, width: 200}
       type: string
+    - name: BirthDate
+      admin_ui: {width: 200, order: 7}
+      type: date
     title: New-user
-  table_2:
-    client: none
-    server: full
-    columns: []
-    title: Table 2
 native_deps: null
