@@ -37,4 +37,9 @@ db_schema:
       admin_ui: {order: 6, width: 200}
       type: string
     title: New-user
+  table_2:
+    client: none
+    server: full
+    columns: []
+    title: Table 2
 native_deps: null
