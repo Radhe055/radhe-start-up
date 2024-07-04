@@ -24,6 +24,15 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'JGOXIL,NWATUX'}
     data_bindings: []
+  - name: label_9
+    properties: {text: Password}
+    type: Label
+    layout_properties: {grid_position: 'MEPKKS,COFUFI'}
+  - name: text_box_4
+    properties: {placeholder: Enter Pass HERE, visible: true}
+    type: TextBox
+    layout_properties: {grid_position: 'GPPEHA,MIJEPJ'}
+    data_bindings: []
   - name: label_3
     properties: {text: Email}
     type: Label
@@ -45,9 +54,26 @@ components:
     type: Label
     layout_properties: {grid_position: 'TXDCYE,RMGZAS'}
   - name: date_picker_1
-    properties: {}
+    properties: {pick_time: true}
     type: DatePicker
     layout_properties: {grid_position: 'FSIWJI,NSTWYL'}
+    data_bindings: []
+  - name: label_7
+    properties: {text: Gender}
+    type: Label
+    layout_properties: {grid_position: 'ZBHACD,IIDZVU'}
+  - name: drop_down_2
+    properties:
+      items: [Male, Female]
+      placeholder: Gender
+    type: DropDown
+    layout_properties: {grid_position: 'EVTLLU,MXIXEL'}
+  - name: button_1
+    properties: {text: Submit}
+    type: Button
+    layout_properties: {grid_position: 'BSMHPH,OLBYVW'}
+    event_bindings: {click: button_1_click}
+    data_bindings: []
 - name: label_6
   properties: {text: Home}
   type: Label
@@ -56,6 +82,11 @@ components:
   properties:
     items: [Support, Contact]
     placeholder: Support
-    include_placeholder: true
+    include_placeholder: false
   type: DropDown
   layout_properties: {slot: nav-right}
+- name: label_8
+  properties: {text: DashBord, icon: 'fa:align-justify', spacing_above: medium, spacing_below: medium, align: center, italic: false, underline: false}
+  type: Label
+  layout_properties: {slot: sidebar}
+  data_bindings: []

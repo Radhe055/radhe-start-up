@@ -2,7 +2,8 @@ unique_ids:
   forms:
     Form1: '172008392814237930698227.532036'
   modules: {}
-  server_modules: {}
+  server_modules:
+    ServerModule1: '1720085792895188656546281.55637'
   assets:
     dashboard.html: ZTHBO2FQOMY4WQUITU3XRWR5XQYKTVS6
     single-column.html: 47YUUB7WXYA6PELNT4GDJ5M4UUZC46VO
