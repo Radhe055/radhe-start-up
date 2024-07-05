@@ -23,10 +23,4 @@ class Form1(Form1Template):
     Password = self.text_box_4.text
     anvil.server.call('submit', Name=Name, Email=Email, Address=Address, BirthDate=BirthDate, Gender=Gender, Password=Password)
 
-  def drop_down_1_change(self, **event_args):
-    """This method is called when an item is selected"""
-    pass
-
-  def date_picker_1_change(self, **event_args):
-    """This method is called when the selected date changes"""
-    pass
+ 
